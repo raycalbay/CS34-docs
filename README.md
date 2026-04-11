@@ -80,6 +80,12 @@ You must commit a file to "activate" the main branch on GitHub.
     git push origin main
     ```
 
+>> Note: If you are prompted to set your Git identity, run the following commands.
+    ```
+    git config --global user.name [Your name]
+    git config --global user.email [Your email address]
+    ```
+
 ### Create and push the dev branch
 
 Now, create a secondary branch where your actual development will happen.
