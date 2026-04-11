@@ -15,6 +15,7 @@ Before starting, make sure you have the necessary software and accounts ready.
 
 * **Account:** Sign up at [GitHub.com](https://github.com/).
 * **Repository:** Create a new repository on GitHub for your coursework. Copy the **HTTPS URL** of the repo.
+    ![Repo settings](assets/github-create-repo.png)
 
 ## Local workspace setup
 
