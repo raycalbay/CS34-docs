@@ -3,112 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Documentation Hub</title>
+    <title>Documentation Index</title>
     <style>
-        :root {
-            --bg: #f8f9fa;
-            --text: #212529;
-            --card-bg: #ffffff;
-            --border: #e9ecef;
-            --accent: #0366d6;
-        }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: var(--text);
-            background-color: var(--bg);
-            margin: 0;
-            padding: 2rem 1rem;
-        }
-        .container {
-            max-width: 900px;
+            color: #24292e;
+            max-width: 700px;
             margin: 0 auto;
+            padding: 3rem 1.5rem;
+            background-color: #fff;
         }
-        header {
-            margin-bottom: 3rem;
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 1.5rem;
-        }
-        h1 { font-size: 2.25rem; margin: 0 0 0.5rem 0; color: #1a1a1a; }
-        .subtitle { color: #6a737d; font-size: 1.1rem; margin: 0; }
+        header { margin-bottom: 3rem; }
+        h1 { font-size: 2rem; font-weight: 600; margin-bottom: 0.5rem; }
+        p.description { color: #586069; font-size: 1.1rem; margin: 0; }
         
-        section { margin-bottom: 2.5rem; }
-        h2 { font-size: 1.5rem; color: #24292e; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        h2 { font-size: 1.3rem; font-weight: 600; margin-top: 2.5rem; border-bottom: 1px solid #eaecef; padding-bottom: 0.3rem; }
         
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1rem;
-        }
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            padding: 1.5rem;
-            transition: transform 0.2s, box-shadow 0.2s;
-            text-decoration: none;
-            color: inherit;
-            display: flex;
-            flex-direction: column;
-        }
-        .card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            border-color: var(--accent);
-        }
-        .card h3 { margin: 0 0 0.5rem 0; color: var(--accent); font-size: 1.2rem; }
-        .card p { margin: 0; color: #586069; font-size: 0.95rem; }
+        ul { list-style-type: none; padding-left: 0; margin: 0; }
+        li { padding: 0.75rem 0; border-bottom: 1px dashed #f1f1f1; display: flex; justify-content: space-between; align-items: baseline; }
+        li:last-child { border-bottom: none; }
         
-        footer { margin-top: 4rem; text-align: center; color: #6a737d; font-size: 0.85rem; }
+        .doc-link { font-weight: 500; color: #0366d6; text-decoration: none; }
+        .doc-link:hover { text-decoration: underline; }
+        .doc-meta { font-size: 0.85rem; color: #6a737d; text-align: right; margin-left: 1rem; }
+        
+        footer { margin-top: 5rem; font-size: 0.85rem; color: #6a737d; border-top: 1px solid #eaecef; padding-top: 1rem; }
     </style>
 </head>
 <body>
 
-<div class="container">
     <header>
-        <h1>Project Documentation</h1>
-        <p class="subtitle">Technical Documentation & Guides Repository</p>
+        <h1>System Architecture Documentation</h1>
+        <p class="description">A centralized index of technical design documents and specifications.</p>
     </header>
 
     <main>
-        <section>
-            <h2>Getting Started</h2>
-            <div class="grid">
-                <a href="docs/installation.html" class="card">
-                    <h3>Installation Guide</h3>
-                    <p>Step-by-step instructions to set up the environment and local dependencies.</p>
-                </a>
-                <a href="docs/configuration.html" class="card">
-                    <h3>Configuration</h3>
-                    <p>How to customize settings, manage environment variables, and config profiles.</p>
-                </a>
-            </div>
-        </section>
+        <h2>1. Architecture Overview</h2>
+        <ul>
+            <li>
+                <a href="specs/system-design.html" class="doc-link">Core System Design</a>
+                <span class="doc-meta">v1.2 &bull; Updated May 2026</span>
+            </li>
+            <li>
+                <a href="specs/data-flow.html" class="doc-link">Data Pipelines & Flowcharts</a>
+                <span class="doc-meta">v1.0 &bull; Updated Jun 2026</span>
+            </li>
+        </ul>
 
-        <section>
-            <h2>API References</h2>
-            <div class="grid">
-                <a href="docs/authentication.html" class="card">
-                    <h3>Authentication</h3>
-                    <p>Overview of OAuth2 protocols, token generation, and security structures.</p>
-                </a>
-                <a href="docs/endpoints.html" class="card">
-                    <h3>Endpoint Directory</h3>
-                    <p>Detailed specifications for REST endpoints, payloads, and response targets.</p>
-                </a>
-                <a href="docs/errors.html" class="card">
-                    <h3>Error Handling</h3>
-                    <p>Dictionary of standard HTTP status responses and error codes.</p>
-                </a>
-            </div>
-        </section>
+        <h2>2. Operational Playbooks</h2>
+        <ul>
+            <li>
+                <a href="playbooks/deployment.html" class="doc-link">CI/CD Deployment Manual</a>
+                <span class="doc-meta">Stable</span>
+            </li>
+            <li>
+                <a href="playbooks/disaster-recovery.html" class="doc-link">Disaster Recovery Plan</a>
+                <span class="doc-meta">Draft</span>
+            </li>
+            <li>
+                <a href="playbooks/monitoring.html" class="doc-link">Metrics & Alerting Framework</a>
+                <span class="doc-meta">Stable</span>
+            </li>
+        </ul>
     </main>
 
     <footer>
-        <p>Built with GitHub Pages &bull; Technical Writing Course</p>
+        <p>Maintained by the Systems Documentation Team.</p>
     </footer>
-</div>
 
 </body>
 </html>

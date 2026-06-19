@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Docs Workspace</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            color: #333;
+            display: flex;
+            min-height: 100vh;
+        }
+        
+        /* Sidebar layout */
+        aside {
+            width: 260px;
+            background: #f4f5f7;
+            border-right: 1px solid #e1e4e8;
+            padding: 2rem 1.5rem;
+            box-sizing: border-box;
+        }
+        aside h3 { font-size: 0.9rem; text-transform: uppercase; color: #6a737d; letter-spacing: 0.05em; margin: 1.5rem 0 0.5rem 0; }
+        aside h3:first-of-type { margin-top: 0; }
+        aside ul { list-style: none; padding: 0; margin: 0; }
+        aside li { margin-bottom: 0.4rem; }
+        aside a { color: #0366d6; text-decoration: none; font-size: 0.95rem; }
+        aside a:hover { text-decoration: underline; }
+        aside .active { font-weight: bold; color: #24292e; text-decoration: none; }
+
+        /* Main Content window */
+        main {
+            flex: 1;
+            padding: 3rem 4rem;
+            max-width: 800px;
+            box-sizing: border-box;
+        }
+        .meta { color: #6a737d; font-size: 0.9rem; }
+        h1 { font-size: 2.5rem; margin-top: 0; margin-bottom: 1rem; border-bottom: 1px solid #eaecef; padding-bottom: 0.5rem;}
+        h2 { font-size: 1.75rem; margin-top: 2rem; }
+        code { background: #f6f8fa; padding: 0.2rem 0.4rem; border-radius: 3px; font-family: monospace; font-size: 85%; }
+        
+        /* Simple responsive layout switch for small screens */
+        @media (max-width: 768px) {
+            body { flex-direction: column; }
+            aside { width: 100%; border-right: none; border-bottom: 1px solid #e1e4e8; }
+            main { padding: 2rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <aside>
+        <h3>Welcome</h3>
+        <ul>
+            <li><a href="index.html" class="active">Overview</a></li>
+        </ul>
+        
+        <h3>User Guides</h3>
+        <ul>
+            <li><a href="guides/quickstart.html">Quickstart Guide</a></li>
+            <li><a href="guides/advanced.html">Advanced Features</a></li>
+        </ul>
+
+        <h3>Developer Resources</h3>
+        <ul>
+            <li><a href="dev/contributing.html">Contributing Rules</a></li>
+            <li><a href="dev/style-guide.html">Doc Style Guide</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <div class="meta">Documentation Hub Workspace</div>
+        <h1>Project Index Overview</h1>
+        <p>Welcome to the main documentation staging ground. This layout mimics the standard documentation portal tree view pattern often found across professional technical platforms.</p>
+        
+        <h2>Quickstart Instructions</h2>
+        <p>To use this template structure for individual page design deployments inside subdirectories:</p>
+        <ol>
+            <li>Copy this structural markup framework into your document files.</li>
+            <li>Update the absolute or relative link anchors within the <code>&lt;aside&gt;</code> element to ensure cross-directory linking handles relative depth cleanly (e.g., changing paths to <code>../index.html</code> where structural scoping demands it).</li>
+        </ol>
+    </main>
+
+</body>
+</html>
