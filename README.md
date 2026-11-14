@@ -58,7 +58,7 @@ This step downloads your GitHub project to your local `C:\GIT` folder.
     ```
 3. Clone your repository:
     ```
-    git clone [your-repo-URL]
+    git clone [your-repo-URL].git
     ```
 4. Open the folder in VS Code (File > Open Folder > navigate to your repo).
 
